@@ -1,0 +1,33 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+public static void main (String[] args){
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("------------------------------");
+    System.out.println("Portfolio of Activity");
+    System.out.println("Name: ADELFA ROSE SALAZAR");
+    System.out.println("2E and 2nd Year: IT26");
+    System.out.println("Contents");
+    System.out.println("1. Activity 1");
+    System.out.println("2. Activity 2");
+    System.out.println("------------------------------");
+    System.out.print("Enter Selection: ");
+    int select = sc.nextInt();
+    System.out.println("------------------------------");
+
+    if(select == 1){
+        Activity1 act1 = new Activity1();
+        act1.userGreeting();
+    }
+    else if(select == 2){
+
+        Activity2 act2 = new Activity2();
+        act2.cinema();
+
+    }
+    else{
+        System.out.println("selection Not found");
+    }
+
+}
